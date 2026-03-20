@@ -4,7 +4,7 @@
  */
 const ABOUT_WORDS = [
   { text: '✳', accent: true },
-  { text: 'YanXin' }, { text: 'Zhang' }, { text: 'is' }, { text: 'a' },
+  { text: 'Ashmit T.' }, { text: 'Zhang' }, { text: 'is' }, { text: 'a' },
   { text: 'multidisciplinary' }, { text: 'experiential' }, { text: 'designer' },
   { text: 'and' }, { text: 'creative' }, { text: 'lead' },
   { text: 'who' }, { text: 'blends' },

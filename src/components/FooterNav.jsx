@@ -17,8 +17,8 @@ export default function FooterNav() {
   return (
     <div style={wrapStyle}>
       <div style={textStyle}>
-        <span>© 2026 YanXin</span><br />
-        <span>hello@yanxinzhang.com</span><br />
+        <span>© 2026 Ashmit T.</span><br />
+        <span>ashmit4works@gmail.com</span><br />
         <span>(+65) 9220 3435</span>
       </div>
       <a

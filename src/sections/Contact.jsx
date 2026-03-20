@@ -26,7 +26,7 @@ export default function Contact() {
         {"let's talk "}
 
         <a
-          href="mailto:hello@yanxinzhang.com"
+          href="mailto:ashmit4works@gmail.com"
           onMouseEnter={() => { setHovered(true); expand() }}
           onMouseLeave={() => { setHovered(false); contract() }}
           style={{
@@ -35,7 +35,7 @@ export default function Contact() {
             transition: 'color .2s, border-color .2s',
           }}
         >
-          hello@yanxinzhang.com
+          ashmit4works@gmail.com
         </a>
 
       </div>
