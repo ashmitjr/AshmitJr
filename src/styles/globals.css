@@ -1,0 +1,45 @@
+@import './variables.css';
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-main);
+  background: var(--white);
+  color: var(--black);
+  overflow-x: hidden;
+  cursor: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+img, video { display: block; }
+
+/* ── Keyframes ── */
+@keyframes fadeIn   { from { opacity: 0; }         to { opacity: 1; } }
+@keyframes popIn    { from { opacity: 0; transform: scale(0); }  to { opacity: 1; transform: scale(1); } }
+@keyframes popInY   { from { opacity: 0; transform: translateY(-50%) scale(0); } to { opacity: 1; transform: translateY(-50%) scale(1); } }
+@keyframes ticker   { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ── Reveal utility ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Divider ── */
+.divider {
+  height: 1px;
+  background: var(--grey);
+  margin: 0 100px;
+}
+
+@media (max-width: 810px) {
+  .divider { margin: 0 16px; }
+}

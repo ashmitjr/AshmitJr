@@ -1,0 +1,46 @@
+const PROJECTS = [
+  {
+    id: 1,
+    title: 'Jinqiu Jiayuan by ByteDance',
+    client: 'ByteDance',
+    tags: 'Art Direction · Experiential Design · Concept Development · 2D & 3D Animation · Interactive UI/UX',
+    caseStudy: true,
+    type: 'video',
+    src: 'https://video.gumlet.io/69a9abbd06a15537d02701a5/69ae9f95f96956f2b5f90b2f/main.mp4',
+    poster: 'https://framerusercontent.com/images/JOYEDJGngCqgqUqMFY63032jAr4.jpg',
+    href: '#work',
+  },
+  {
+    id: 2,
+    title: 'LKY100',
+    client: 'National Heritage Board',
+    tags: 'Experiential Design · Motion Design',
+    caseStudy: false,
+    type: 'image',
+    src: 'https://framerusercontent.com/images/wMsJeUgDAt07Spb9jgbEdL7tifs.jpg',
+    href: '#work',
+  },
+  {
+    id: 3,
+    title: 'Leveling Up Rev Illimité',
+    client: 'Rev Illimité',
+    tags: 'Art Direction · Brand Systems · 2D & 3D Animation',
+    caseStudy: true,
+    type: 'video',
+    src: 'https://video.gumlet.io/69a9abbd06a15537d02701a5/69ae9f956fd61f7e4bb4ebda/main.mp4',
+    poster: 'https://framerusercontent.com/images/IF9MDlNLXKlApwkkWoou4mQMo1w.jpg',
+    href: '#work',
+  },
+  {
+    id: 4,
+    title: 'Jumbo Signatures',
+    client: 'Jumbo Group of Restaurants',
+    tags: 'Art Direction · Brand Systems · Print',
+    caseStudy: false,
+    type: 'image',
+    src: 'https://framerusercontent.com/images/jKSWb8nhDHekUUhy7TU93bZUo.jpg',
+    href: '#work',
+  },
+]
+
+export default PROJECTS

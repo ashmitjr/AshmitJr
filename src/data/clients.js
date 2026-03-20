@@ -1,0 +1,57 @@
+export const CLIENT_CARDS = [
+  {
+    id: 1,
+    name: 'ByteDance',
+    type: 'video',
+    bg: 'https://framerusercontent.com/assets/AWQoqqKCN7ZJMRTCs31ymhNMa4.mp4',
+    poster: 'https://framerusercontent.com/images/TOWJS5MUqxf0AqCS6k4cyarVzY.jpg',
+    logo: 'https://framerusercontent.com/images/VMqAbr6Irn7p1aOpL6oC1E9RgiE.png',
+    href: '#work',
+  },
+  {
+    id: 2,
+    name: 'National Heritage Board',
+    type: 'image',
+    bg: 'https://framerusercontent.com/images/UroXQULTaU62PLU8teHo2Z82mtI.jpg',
+    logo: 'https://framerusercontent.com/images/0a9eC0DsSdgltwG6NFXIJwEwpk.png',
+    href: '#work',
+  },
+  {
+    id: 3,
+    name: 'Thermo Fisher Scientific',
+    type: 'video',
+    bg: 'https://framerusercontent.com/assets/ymGXt2o7P2C1uCyPig3dyScfQ.mp4',
+    poster: 'https://framerusercontent.com/images/obk7Ti7nUMhyfX69fexY8uK5l0.jpg',
+    logo: 'https://framerusercontent.com/images/NVzY0swVhyTo6Ei9PcXQKF2I.png',
+    href: '#work',
+  },
+  {
+    id: 4,
+    name: 'Jumbo Group',
+    type: 'image',
+    bg: 'https://framerusercontent.com/images/ckJ56L2WEjBjJ5dteiOlvXMdc.jpg',
+    logo: 'https://framerusercontent.com/images/nLJFcAvaw9vlG6tMIIEXtoB188.png',
+    href: '#work',
+  },
+  {
+    id: 5,
+    name: 'NParks',
+    type: 'image',
+    bg: 'https://framerusercontent.com/images/XjwPzi2YSxoT7gtF3dSedIiadM.jpg',
+    logo: 'https://framerusercontent.com/images/IDoUjTdGKievQsFbVuZtYlLXesE.png',
+    href: '#work',
+  },
+]
+
+export const LOGO_STRIP = [
+  'https://framerusercontent.com/images/bYmLoWn0jWW4AePUOixjU54juUQ.png',
+  'https://framerusercontent.com/images/HzluPjZZ97kEySqSSvE0vMrVog.png',
+  'https://framerusercontent.com/images/v8I6SIsDNsHaPX5yny09Dqupi3s.png',
+  'https://framerusercontent.com/images/WU8xRcrAW0hEF4mxJkRvf9auc0.png',
+  'https://framerusercontent.com/images/1u2cQuCLhJk6p4LiUK1LEMNZc.png',
+  'https://framerusercontent.com/images/ulmuMkAblUexnoYjdNPymShrnas.png',
+  'https://framerusercontent.com/images/Y9y7MupSiyGewtmr1UC30q2Mdk.png',
+  'https://framerusercontent.com/images/v4QAy6oDB19VT4wT9Ki18p2Vs0.png',
+  'https://framerusercontent.com/images/gXL3P49yPxLjruucSEhrOz8.png',
+  'https://framerusercontent.com/images/NP9cWrMW115Dged0sXMFFqp0kY.png',
+]
