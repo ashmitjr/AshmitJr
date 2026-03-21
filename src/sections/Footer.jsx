@@ -11,7 +11,7 @@ export default function Footer() {
         textAlign: 'center', letterSpacing: '-0.02em',
         userSelect: 'none',
       }}>
-        YX*<br />/26
+        Ashmit*<br />/26
       </div>
     </footer>
   )

@@ -1,32 +1,41 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from "react"
 
-/**
- * Attach to any ref — when the element enters the viewport
- * it gets the class 'in' which triggers the CSS reveal transition.
- *
- * @param {number} threshold  0–1, default 0.15
- * @returns React ref to attach to your element
- */
-export default function useReveal(threshold = 0.15) {
+export default function useReveal(options = {}) {
   const ref = useRef(null)
+
+  const {
+    threshold = 0.2,
+    root = null,
+    rootMargin = "0px",
+    onReveal = null,
+    once = true,
+  } = options
 
   useEffect(() => {
     const el = ref.current
     if (!el) return
 
-    const io = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.classList.add('in')
-          io.disconnect()
+          el.classList.add("revealed")
+
+          if (onReveal) onReveal()
+
+          if (once) observer.unobserve(el)
         }
       },
-      { threshold }
+      {
+        threshold: Number.isFinite(threshold) ? threshold : 0.2,
+        root,
+        rootMargin,
+      }
     )
 
-    io.observe(el)
-    return () => io.disconnect()
-  }, [threshold])
+    observer.observe(el)
+
+    return () => observer.disconnect()
+  }, [threshold, root, rootMargin, onReveal, once])
 
   return ref
 }

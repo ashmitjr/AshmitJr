@@ -1,23 +1,36 @@
-import useReveal from '../hooks/useReveal'
-
 export default function ServiceCol({ service }) {
-  const ref = useReveal(0.2)
-
   return (
-    <div ref={ref} className="reveal" style={{ flex: 1, minWidth: 220 }}>
-      <div style={{
-        fontSize: 'clamp(28px, 4vw, 50px)',
-        fontWeight: 500, lineHeight: 0.9, whiteSpace: 'pre-line',
-      }}>
-        {service.title[0]}{'\n'}{service.title[1]}
+    <div style={{ display: "flex", gap: "40px" }}>
+      
+      {/* LEFT TITLE */}
+      <div style={{ minWidth: "300px" }}>
+        <div style={{ fontSize: 50, fontWeight: 500, lineHeight: "0.9em" }}>
+          {service.title[0]}
+          <img
+            src={service.icon}
+            style={{ width: 50, margin: "0 6px" }}
+          />
+          {service.title[1]}
+        </div>
+
+        <div style={{ fontSize: 50, fontWeight: 500 }}>
+          {service.titleBot}
+        </div>
       </div>
-      <p style={{ fontSize: 13, fontWeight: 500, marginTop: 16, lineHeight: 1.6 }}>
-        <span style={{ fontWeight: 900, color: '#0b1dff' }}>({service.id})</span>
-        {' '}{service.intro}
-      </p>
-      <div style={{ marginTop: 16 }}>
-        {service.items.map((item) => (
-          <p key={item} style={{ fontSize: 13, lineHeight: 1.8 }}>{item}</p>
+
+      {/* RIGHT TEXT */}
+      <div style={{ maxWidth: 400 }}>
+        <p>
+          <span style={{ color: "#0b1dff", fontWeight: 900 }}>
+            ({service.id})
+          </span>{" "}
+          {service.intro}
+        </p>
+
+        <br />
+
+        {service.items.map((item, i) => (
+          <p key={i}>{item}</p>
         ))}
       </div>
     </div>
